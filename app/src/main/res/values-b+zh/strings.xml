@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">新傣文一键</string>
+
+    <string name="description">进入输入法设置并启用新傣文一键，然后从输入法选择器中选择它。</string>
+    <string name="openimsettings">打开输入法设置</string>
+    <string name="openimmenu">打开输入法菜单</string>
+    <string name="action_settings">设置</string>
+</resources>

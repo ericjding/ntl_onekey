@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NTL OneKey</string>
+
+    <string name="description">Go to input method settings, enable NTL OneKey, then select it from the input method menu.</string>
+    <string name="openimsettings">Open input method settings"</string>
+    <string name="openimmenu">Open input method menu</string>
+    <string name="action_settings">Settings</string>
+</resources>
