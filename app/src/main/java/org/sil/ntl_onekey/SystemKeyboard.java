@@ -38,13 +38,13 @@ public class SystemKeyboard extends InputMethodService implements OnKeyboardEven
 
     // Add a custom keyboard
     HashMap<String, String> kbInfo = new HashMap<String, String>();
-    kbInfo.put(KMManager.KMKey_PackageID, "ntl_onekey");
+    kbInfo.put(KMManager.KMKey_PackageID, "cloud");
     kbInfo.put(KMManager.KMKey_KeyboardID, "ntl_onekey");
     kbInfo.put(KMManager.KMKey_LanguageID, "khb");
     kbInfo.put(KMManager.KMKey_KeyboardName, "\u65B0\u50A3\u6587\u4E00\u952E");
     kbInfo.put(KMManager.KMKey_LanguageName, "\u65B0\u50A3\u6587");
     kbInfo.put(KMManager.KMKey_KeyboardVersion, "1.001");
-    kbInfo.put(KMManager.KMKey_Font, "Nokyung-R.ttf");
+    //    kbInfo.put(KMManager.KMKey_Font, "Nokyung-Regular.ttf");
     KMManager.addKeyboard(this, kbInfo);
   }
 
@@ -162,7 +162,7 @@ public class SystemKeyboard extends InputMethodService implements OnKeyboardEven
   public void onKeyboardLoaded(KeyboardType keyboardType) {
     // Handle Keyman keyboard loaded event here if needed
     // We can set our custom keyboard here
-    int kbIndex = KMManager.getKeyboardIndex(this, "ntl_touch", "khb");
+    int kbIndex = KMManager.getKeyboardIndex(this, "ntl_onekey", "khb");
     KMManager.setKeyboard(this, kbIndex);
   }
 
