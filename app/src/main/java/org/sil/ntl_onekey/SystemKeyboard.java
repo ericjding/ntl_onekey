@@ -44,7 +44,7 @@ public class SystemKeyboard extends InputMethodService implements OnKeyboardEven
     kbInfo.put(KMManager.KMKey_KeyboardName, "\u65B0\u50A3\u6587\u4E00\u952E");
     kbInfo.put(KMManager.KMKey_LanguageName, "\u65B0\u50A3\u6587");
     kbInfo.put(KMManager.KMKey_KeyboardVersion, "1.001");
-    //    kbInfo.put(KMManager.KMKey_Font, "Nokyung-Regular.ttf");
+    kbInfo.put(KMManager.KMKey_Font, KMManager.KMDefault_KeyboardFont); // Use the default font
     KMManager.addKeyboard(this, kbInfo);
   }
 
