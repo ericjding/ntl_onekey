@@ -20,7 +20,7 @@
 **/.DS_Store
 
 # This is the file output from KMEA; it's part of our build process.
-**/keyman-engine.aar
+#**/keyman-engine.aar
 
 # APK signing information
 keystore.properties
