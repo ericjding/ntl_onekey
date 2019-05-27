@@ -1,6 +1,6 @@
 package org.sil.ntl_onekey;
 
-import android.app.Activity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.provider.Settings;
@@ -15,10 +15,11 @@ import android.widget.Button;
 import android.widget.TextView;
 import org.sil.ntl_onekey.BuildConfig;
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 
   @Override
- protected void onCreate(Bundle savedInstanceState) {
+  protected void onCreate(Bundle savedInstanceState) {
+    setTheme(R.style.AppTheme);
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 

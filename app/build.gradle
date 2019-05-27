@@ -13,14 +13,14 @@ android {
             storePassword keystoreProperties['storePassword']
         }
     }
-    compileSdkVersion 25
-    buildToolsVersion "26.0.2"
+    compileSdkVersion 28
+
     defaultConfig {
         applicationId "org.sil.ntl_onekey"
-        minSdkVersion 15
-        targetSdkVersion 25
-        versionCode 2
-        versionName "1.0.1"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 3
+        versionName "1.1.0"
     }
     buildTypes {
         release {
@@ -32,14 +32,20 @@ android {
 }
 
 repositories {
-    google()
     flatDir {
         dirs 'libs'
     }
+    google()
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:25.1.0'
-    api(name: 'keyman-engine', ext: 'aar')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.android.material:material:1.0.0'
+    api (name:'keyman-engine', ext:'aar')
+    implementation "com.google.firebase:firebase-core:16.0.8"
+    implementation "com.google.firebase:firebase-crash:16.2.1"
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.9@aar') {
+        transitive = true
+    }
 }
