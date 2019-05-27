@@ -5,11 +5,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.provider.Settings;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.TextView;
+import org.sil.ntl_onekey.BuildConfig;
 
 public class MainActivity extends Activity {
 
@@ -17,6 +21,10 @@ public class MainActivity extends Activity {
  protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
+
+    TextView textView0 = (TextView) findViewById(R.id.textView0);
+    String apptitle = getResources().getString(R.string.apptitle);
+    textView0.setText(Html.fromHtml(apptitle));
 
     Button button1 = (Button) findViewById(R.id.button1);
     button1.setOnClickListener(new View.OnClickListener() {
@@ -34,6 +42,14 @@ public class MainActivity extends Activity {
         imManager.showInputMethodPicker();
       }
     });
+
+    // Use setText rather than hardcoding in activity_main.xml so we can
+    // use HTML tags.
+    TextView textView2 = (TextView) findViewById(R.id.textView2);
+    String aboutstring = getResources().getString(R.string.aboutntlonekey);
+    aboutstring = aboutstring.replace("VNAME",BuildConfig.VERSION_NAME);
+    textView2.setText(Html.fromHtml(aboutstring));
+    textView2.setMovementMethod(LinkMovementMethod.getInstance());
   }
 
   @Override

@@ -1,8 +1,14 @@
 <resources>
     <string name="app_name">NTL OneKey</string>
 
+    <string name="apptitle"><![CDATA[<b>NTL OneKey</b>]]></string>
     <string name="description">Go to input method settings, enable NTL OneKey, then select it from the input method menu.</string>
     <string name="openimsettings">Open input method settings"</string>
     <string name="openimmenu">Open input method menu</string>
     <string name="action_settings">Settings</string>
+    <string name="aboutntlonekey"><![CDATA[<p>Version: VNAME<br />© 2018-2019 SIL International</p>
+<p><b>NTL OneKey</b> is freely distributable software created by the Dai-Han Bilingual Education Project, a joint initiative of SIL International and educational partners in Xishuangbanna Prefecture, Yunnan Province, China.</p>
+<p>SIL Yunnan exists to serve minority language communities throughout China, in partnership with other institutional and individual stakeholders, through research, training, public advocacy, education, and materials development.</p>
+<p>For more information about the Dai-Han BE Project and SIL International, please visit <a href="https://www.sil-yn.org/">www.sil-yn.org</a> or <a href="https://www.sil.org/">www.sil.org</a>.</p>
+<p>NTL OneKey is licensed under the <a href="https://opensource.org/licenses/MIT">MIT license</a> and is based on the Keyman Engine for Android. For more information about Keyman, please visit <a href="https://keyman.com/">keyman.com</a>.</p>]]></string>
 </resources>

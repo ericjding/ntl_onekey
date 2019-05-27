@@ -5,9 +5,22 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
-    <TextView android:text="@string/description" android:layout_width="wrap_content"
+  <TextView
+	android:textSize="20sp"
+	android:textColor="#000000"
+        android:layout_width="wrap_content"      
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
+        android:id="@+id/textView0"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" />
+
+    <TextView
+	android:text="@string/description"
+	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_below="@+id/textView0"
+        android:layout_marginTop="8dp"
         android:layout_centerHorizontal="true" />
 
     <Button
@@ -15,9 +28,9 @@
         android:layout_height="wrap_content"
         android:text="@string/openimsettings"
         android:id="@+id/button1"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="8dp" />
 
     <Button
         android:layout_width="260dp"
@@ -26,6 +39,15 @@
         android:id="@+id/button2"
         android:layout_below="@+id/button1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="8dp" />
+
+    <TextView
+	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:id="@+id/textView2"
+	android:scrollbars="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
 
 </RelativeLayout>
